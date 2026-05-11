@@ -1,0 +1,6 @@
+# Forzar que todos los archivos de texto se manejen automáticamente
+* text=auto
+
+# Opcional: Forzar específicamente archivos de Angular/TS
+*.ts text eol=lf
+*.html text eol=lf
