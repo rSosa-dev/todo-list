@@ -16,7 +16,7 @@ export class LoginComponent {
   errorMessage = 'Invalid credentials'
   invalidLogin = false
 
-  constructor(private router: Router) { }
+  constructor(private readonly router: Router) { }
 
   handleLogin() {
     // console.log(this.username);

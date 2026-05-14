@@ -1,16 +1,16 @@
-import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { OnInit } from '@angular/core';
+import { ActivatedRoute, RouterLink } from '@angular/router';
+import { OnInit, Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-welcome',
-  imports: [],
+  imports: [RouterLink, CommonModule],
   templateUrl: './welcome.component.html',
   styleUrl: './welcome.component.css',
 })
 export class WelcomeComponent implements OnInit {
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private readonly route: ActivatedRoute) { }
 
   name = ''
 
