@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root',
 })
+
 export class HardcodedAuthService {
 
   constructor() { }
@@ -19,6 +20,10 @@ export class HardcodedAuthService {
 
   isUserLoggedIn(): boolean {
     let user = sessionStorage.getItem('authenticatedUser');
-    return !(user === null);
+    return (user !== null);
+  }
+
+  logout() {
+    sessionStorage.removeItem('authenticatedUser');
   }
 }
