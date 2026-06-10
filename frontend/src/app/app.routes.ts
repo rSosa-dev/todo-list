@@ -14,5 +14,5 @@ export const routes: Routes = [
     { path: 'todos', component: ListTodosComponent, canActivate:[RouteGuardService] },
     { path: 'logout', component: LogoutComponent, canActivate:[RouteGuardService] },
 
-    { path: '**', component: ErrorComponent}
+    { path: '**', component: ErrorComponent }
 ];
